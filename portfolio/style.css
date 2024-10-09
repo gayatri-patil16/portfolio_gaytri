@@ -1,0 +1,135 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-size: medium;
+
+  }
+  
+  header {
+    background: #243642;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-left: 25%;
+  }
+  .project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .project img {
+    margin-bottom: 1rem;
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+   ul li  {
+    color: black;
+    text-decoration: none;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+  }
+  section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  article, aside, figure, form, table {
+    margin: 20px 0;
+  }
+  
+  figure img {
+    max-width: 100%;
+     grid-row: auto;
+    grid-column: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+ 
+  
+  footer {
+    background: #243642;
+    color:white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+  
+    section {
+        flex-direction: column;
+    }
+  
+    
+  }
+
+ 
